@@ -25,4 +25,25 @@ Now we have to configure our app to use ORM
 ////
 Usually, we put the sequelize connection BENEATH the middleware configuration but ABOVE the root route. This is becasue we want to put it anywhere above where database might be needed. 
 
-/// modles are objects on our .... ? 7:27PM
+/// 
+modles are objects on our .... ? 7:27PM
+
+// Other commands used
+npm i -g sequelize-cli
+sequelize init:config
+sequelize init:models
+sequelize init:migrations
+sequelize model:generate --name Band --attributes "band_id:integer, name:string, genre:text, available_start_time:date, end_time:date" --force true
+
+sequelize db:migrate
+
+// Adding Foregin Keys through command line
+references: { model: 'users', key: 'id' }
+userId: {
+      type: Sequelize.INTEGER,
+      references: { model: 'users', key: 'id' }
+    }
+
+
+// Link to Review
+https://sequelize.org/docs/v6/other-topics/constraints-and-circularities/
