@@ -21,3 +21,8 @@ A little review:
 
 ////
 Now we have to configure our app to use ORM
+
+////
+Usually, we put the sequelize connection BENEATH the middleware configuration but ABOVE the root route. This is becasue we want to put it anywhere above where database might be needed. 
+
+/// modles are objects on our .... ? 7:27PM
