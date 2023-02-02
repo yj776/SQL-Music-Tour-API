@@ -47,3 +47,20 @@ userId: {
 
 // Link to Review
 https://sequelize.org/docs/v6/other-topics/constraints-and-circularities/
+
+
+2.1.23 ///////////////////////////////////// 2.1.23 
+MAC Reminder
+- Add npx before any sequelize commands
+- npx sequelize migration:generate --name add-recommendation-column-to-bands
+
+// In pgAdmin4... we used
+SELECT name FROM public. "SequelizeMeta";
+
+Today we did
+- Custom Migrations
+
+Commands Used
+npx sequelize migration:generate --name add-recommendation-column-to-bands
+sequelize db:migrate
+sequelize db:migrat:undo
