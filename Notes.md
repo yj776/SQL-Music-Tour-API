@@ -5,6 +5,8 @@ npm start - this is a command that will run from scrips -> start -> node.server.
 - Intally npm start may say ROCKING' on port: undefined ... This is because the ports are not identified. We have no .env file. in server.js ROCKING' on port: process.env.PORT
 
 .gitignor will contain file names that we don't want to get pushed into github. 
+- PORT = 3000
+- ....?
 
 Note: It's always a good ideea to through starter codes. 
 
@@ -57,10 +59,16 @@ MAC Reminder
 // In pgAdmin4... we used
 SELECT name FROM public. "SequelizeMeta";
 
-Today we did
-- Custom Migrations
+What's done?
+- added View (today: Custom Migrations); There are other migrations that are not custom
+- added controllers - contains all the logic
+- Created routes and used Postman
 
 Commands Used
 npx sequelize migration:generate --name add-recommendation-column-to-bands
 sequelize db:migrate
 sequelize db:migrat:undo
+
+
+Pending
+
