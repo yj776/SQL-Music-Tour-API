@@ -35,7 +35,7 @@ npm i -g sequelize-cli
 sequelize init:config
 sequelize init:models
 sequelize init:migrations
-sequelize model:generate --name Band --attributes "band_id:integer, name:string, genre:text, available_start_time:date, end_time:date" --force true
+sequelize model:generate --name Band --attributes "band_id:integer, name:string, genre:text, availabsele_start_time:date, end_time:date" --force true
 
 sequelize db:migrate
 
@@ -72,3 +72,7 @@ sequelize db:migrat:undo
 
 Pending
 
+
+
+
+sequelize model:generate --name stageevent --attributes "stage_events_id:integer, stage_id:smallint, event_id:smallint --force true
