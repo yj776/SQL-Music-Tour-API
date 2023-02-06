@@ -76,3 +76,14 @@ Pending
 
 
 sequelize model:generate --name stageevent --attributes "stage_events_id:integer, stage_id:smallint, event_id:smallint --force true
+
+
+
+////// NOTES
+- Creating a back end API
+- Model and controllers are bread and butter
+- 1st. Establish this by creating a .env files that points to a postgres files created through PGAdmin
+- 2nd. generate model. Model is the blue print of our what the tables will look like in the backend.
+- 3rd. create table using migration using sequelize -> transfers to pgAdmin
+- 4th. Create controller to be able to munipulate the data we want from table
+- 5th. Maybe create junction table to grab data from other tables through (association)
