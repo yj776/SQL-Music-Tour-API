@@ -31,7 +31,7 @@ Usually, we put the sequelize connection BENEATH the middleware configuration bu
 modles are objects on our .... ? 7:27PM
 
 // Other commands used
-npm i -g sequelize-cli
+npm i -g sequelize-cli || npm install --save-dev sequelize-cli
 sequelize init:config
 sequelize init:models
 sequelize init:migrations
